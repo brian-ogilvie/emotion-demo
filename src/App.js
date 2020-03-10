@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Container, Box, H1 } from './styledComponents';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <H1>Emotion with create-react-app</H1>
+      <Container>
+        <Box css={{ height: '200px' }}>
+          I have 200px height.
+          <br />I got it from the css prop.
+        </Box>
+        <Box css={{ height: '300px' }}>
+          I have 300px height.
+          <br />I got it from the css prop.
+        </Box>
+        <Box css={{ height: '400px' }}>
+          I have 400px height.
+          <br />I got it from the css prop.
+        </Box>
+      </Container>
+      <p>
+        The container above should have an animated background. The boxes above
+        should be grey with Roboto font.
+      </p>
+    </>
   );
 }
 
